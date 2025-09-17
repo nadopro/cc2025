@@ -10,6 +10,19 @@ https://github.com/nadopro/cc2025
 
 https://w3schools.com
 
+copilot
+gemini
+perplexity ai
+claude ai
+
+
+개와 고양이가 컴퓨터앞에서 키보드를 타이핑하고 있는 그림을 사진처럼 그려줘.
+
+개와 고양이가 컴퓨터앞에서 키보드를 타이핑하고 있는 그림을 사진처럼 그려줘.
+개와 고양이는 의인화해서 캐릭처럼 그려줘.
+개와 고양이의 크기는 비슷하게 그려줘.
+가로형으로 그려줘.
+
 Prompt : 프롬프트
 1. 닫힌 질문
 2. 출력은 내가 정한다.
@@ -91,3 +104,10 @@ HTML에서 텍스트와 관련된 자주 사용하는 태그 10개를
 <b>동해</b>물과 <b><u>백두산</u>이<br> 마르고</b> 닳도록
 
 w3schools.com
+
+
+HTML5를 이용해 반응형 홈페이지를 만들려고 해.
+Bootstrap5의 예제를 보고싶은데,
+
+container와 container-fluid의 예를 함께 포함하고 싶어.
+배경색으로 danger, success 등 텍스트로 색을 표현하는 예를 보고 싶어.
