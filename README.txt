@@ -6,7 +6,9 @@
 강의자용 컴퓨터에 있는 데이터의 실시간 확인
 
 https://github.com/nadopro
+https://github.com/nadopro/cc2025
 
+https://w3schools.com
 
 Prompt : 프롬프트
 1. 닫힌 질문
