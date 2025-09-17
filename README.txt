@@ -111,3 +111,14 @@ Bootstrap5의 예제를 보고싶은데,
 
 container와 container-fluid의 예를 함께 포함하고 싶어.
 배경색으로 danger, success 등 텍스트로 색을 표현하는 예를 보고 싶어.
+
+
+
+HTML5를 이용해 반응형 홈페이지를 만들려고 해.
+Bootstrap5의 예제를 보고싶은데,
+
+container에 2025년 9월의 달력을 그리고 싶어.
+1일은 월요일이고, 30일까지 있어.
+달력을 그릴때, Bootstrap5의 table을 이용해 그려줘.
+달력을 일, 월 ~ 토까지로 표현해 줘.
+
