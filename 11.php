@@ -10,7 +10,7 @@
   <button onclick="checkInput()">확인</button>
 
   <script>
-    function checkInput() {
+    function checkInput(){
       let value = document.getElementById("numInput").value;
 
       // isNaN() : 숫자가 아닌지 검사
