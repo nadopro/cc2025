@@ -173,3 +173,87 @@ HTML의 헤더와 푸터까지 포함해 줘.
 9.php를 만들건데 HTML 헤더를 포함해 줘.
 1부터 100까지 출력하는데, 다음 조건에 맞는 수만 출력해 줘.
 숫자에 3, 6, 9 중 하나라도 있는 것은 제외해
+
+-----------------------------------------------
+아래와 같은 코드와 똑같이 동작하도록 PHP로 단순화해 줘.
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2025년 9월 달력</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">2025년 9월 달력</h1>
+    <table class="table table-bordered text-center">
+      <thead class="table-light">
+        <tr>
+          <th class="text-danger">일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th class="text-primary">토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 1주차: 1일이 월요일 -->
+        <tr>
+          <td class="text-danger"></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td class="text-primary">6</td>
+        </tr>
+        <!-- 2주차 -->
+        <tr>
+          <td class="text-danger">7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td class="text-primary">13</td>
+        </tr>
+        <!-- 3주차 -->
+        <tr>
+          <td class="text-danger">14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td class="text-primary">20</td>
+        </tr>
+        <!-- 4주차 -->
+        <tr>
+          <td class="text-danger">21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td class="text-primary">27</td>
+        </tr>
+        <!-- 5주차 -->
+        <tr>
+          <td class="text-danger">28</td>
+          <td>29</td>
+          <td>30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="text-primary"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
