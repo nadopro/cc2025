@@ -338,4 +338,18 @@ WHERE name LIKE '이%'
 ORDER BY name ASC;
 
 
+db user : cnu
+db name : cnu
+db pass : 1111
+
+로 mysql이 설정되어 있어.
+
+connectDB()를 정의하고 싶은데,
+앞의 사용자 정보를 이용해 데이터베이스에 접속한 후,
+성공하면 $conn을 반환하는 PHP 코드를 만들고 싶어
+이를 만족하는 db.php 파일을 만들어 줘.
+이때 mysqli를 이용해 만들어 줘.
+
+
+
 
