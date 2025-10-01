@@ -326,8 +326,16 @@ INSERT INTO first (user_id, password, name) VALUES
 ('toegye369', '1111', '이퇴계');
 
 
-111
+INSERT INTO first (user_id, password, name) VALUES
+('cjpark', password('1111'), '박채정')
 
+
+앞의 first 테이블에서 성이 "이"씨만 찾아서 이름의 오름차순으로 검색해 줘.
+
+SELECT *
+FROM first
+WHERE name LIKE '이%'
+ORDER BY name ASC;
 
 
 
