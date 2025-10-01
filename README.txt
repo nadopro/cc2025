@@ -326,6 +326,8 @@ INSERT INTO first (user_id, password, name) VALUES
 ('toegye369', '1111', '이퇴계');
 
 
+111
+
 
 
 
