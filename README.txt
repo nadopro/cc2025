@@ -307,3 +307,25 @@ CREATE TABLE first (
     password VARCHAR(255) NOT NULL,
     name VARCHAR(100) NOT NULL
 );
+
+table 이름을 first로 바꾸어 등록했어.
+데이터를 넣는 예제를 10개만 만들어 줘.
+user_id는 무작위로 만들고 비밀번호는 모두 "1111"로 해줘.
+이름은 조선시대 역사인물로 임의로 정해 줘.
+
+INSERT INTO first (user_id, password, name) VALUES
+('hong123', '1111', '홍길동'),
+('yi456', '1111', '이순신'),
+('sejo789', '1111', '세조'),
+('jang999', '1111', '장영실'),
+('jeong321', '1111', '정약용'),
+('kim654', '1111', '김정희'),
+('gang852', '1111', '강감찬'),
+('sin147', '1111', '신사임당'),
+('yulgok258', '1111', '이율곡'),
+('toegye369', '1111', '이퇴계');
+
+
+
+
+
