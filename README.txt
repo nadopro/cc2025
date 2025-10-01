@@ -286,3 +286,9 @@ HTML 영역
 입력창에 숫자를 입력 받고, 입력창 옆에 버튼을 클릭하면
 자바스크립트로 입력한 값을 alert()해줘.
 만약에 입력한 값이 숫자가 아니면 "숫자를 입력하세요"라고 confirm() 해줘.
+
+
+localhost/phpmyadmin
+
+https://www.security.org/how-secure-is-my-password/
+
