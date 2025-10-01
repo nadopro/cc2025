@@ -350,6 +350,14 @@ connectDB()를 정의하고 싶은데,
 이를 만족하는 db.php 파일을 만들어 줘.
 이때 mysqli를 이용해 만들어 줘.
 
+다음과 같은 조건을 만족하는 12.php 파일을 만들어 줘.
+HTML5와 Bootstrap5를 이용한 코드를 생성.
+<body>에는 <div class='container'>를 포함하고 싶어.
+문서의 제목은 "DB 연결 테스트"이고,
+
+connectDB()라는 함수를 db.php에 만들어 놓았으니,
+이 파일을 include 해 줘.
+이때 mysqli_query()를 이용하고 싶어.
 
 
 
