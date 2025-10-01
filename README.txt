@@ -360,4 +360,41 @@ connectDB()라는 함수를 db.php에 만들어 놓았으니,
 이때 mysqli_query()를 이용하고 싶어.
 
 
+------------------------------------
 
+회원가입을 위한 테이블을 만들고 싶어.
+
+table name : users
+필드들은 다음이 있어.
+idx : auto increment, primary key
+그외에 필요한 항목 : id (unique), pass, name, mobile
+
+
+CREATE TABLE users (
+    idx INT AUTO_INCREMENT PRIMARY KEY,      -- 고유 번호, 자동 증가
+    id VARCHAR(50) NOT NULL UNIQUE,          -- 회원 아이디, 중복 방지
+    pass VARCHAR(255) NOT NULL,              -- 비밀번호 (실제 서비스에서는 해싱 저장 권장)
+    name VARCHAR(100) NOT NULL,              -- 회원 이름
+    mobile VARCHAR(20) NOT NULL              -- 휴대폰 번호
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+이 테이블에 데이터를 10개 넣어줘.
+name 은 조선시대 역사 인물로 무작위로 넣어줘.
+mobile : 010-????-???? 형태의 랜덤값
+id는 성씨(영문) + 전화번호뒤4자리
+비밀번호는 암호화하지 않은 "전화번호 뒤 4자리"
+
+
+INSERT INTO users (id, pass, name, mobile) VALUES
+('admin', '1111', '관리자', '010-1111-1111'),
+('lee1234', '1234', '이순신', '010-2345-1234'),
+('jeong5678', '5678', '정약용', '010-8765-5678'),
+('kim9012', '9012', '김정희', '010-3456-9012'),
+('kang3456', '3456', '강감찬', '010-1122-3456'),
+('hong7890', '7890', '홍길동', '010-5566-7890'),
+('shin1122', '1122', '신사임당', '010-9911-1122'),
+('jang3344', '3344', '장영실', '010-2233-3344'),
+('sejo7788', '7788', '세조', '010-6677-7788'),
+('yul9900', '9900', '이율곡', '010-8899-9900'),
+('toe4455', '4455', '이퇴계', '010-3344-4455');
