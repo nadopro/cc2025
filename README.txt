@@ -292,3 +292,18 @@ localhost/phpmyadmin
 
 https://www.security.org/how-secure-is-my-password/
 
+
+Excel ==> DB
+Sheet  ==> table
+
+
+회원관리를 위해, id, pass, name만 있는 mysql 
+데이터베이스 테이블을 만들어 줘.
+
+
+CREATE TABLE first (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL
+);
