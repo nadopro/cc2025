@@ -398,3 +398,254 @@ INSERT INTO users (id, pass, name, mobile) VALUES
 ('sejo7788', '7788', '세조', '010-6677-7788'),
 ('yul9900', '9900', '이율곡', '010-8899-9900'),
 ('toe4455', '4455', '이퇴계', '010-3344-4455');
+
+================= 2025-10-09 보강용 ==================
+
+localhost/phpmyadmin
+
+CREATE TABLE users (
+    idx INT AUTO_INCREMENT PRIMARY KEY,      -- 고유 번호, 자동 증가
+    id VARCHAR(50) NOT NULL UNIQUE,          -- 회원 아이디, 중복 방지
+    pass VARCHAR(255) NOT NULL,              -- 비밀번호 (실제 서비스에서는 해싱 저장 권장)
+    name VARCHAR(100) NOT NULL,              -- 회원 이름
+    mobile VARCHAR(20) NOT NULL              -- 휴대폰 번호
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+1. 입력(삽입, insert)
+insert into 테이블이름 (id, pass, name, mobile) 
+    values ('필드1값', '필드2값', '필드3값', '010-1111-1111');
+  
+insert into 테이블이름 (id, pass, name, mobile) 
+    values ('myid', 'mypass', '내이름', '010-1111-1111');
+
+CREATE TABLE users (
+    idx INT AUTO_INCREMENT PRIMARY KEY,      -- 고유 번호, 자동 증가
+    id VARCHAR(50) NOT NULL UNIQUE,          -- 회원 아이디, 중복 방지
+    pass VARCHAR(255) NOT NULL,              -- 비밀번호 (실제 서비스에서는 해싱 저장 권장)
+    name VARCHAR(100) NOT NULL,              -- 회원 이름
+    mobile VARCHAR(20) NOT NULL              -- 휴대폰 번호
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+이렇게 만들어진 mysql 데이터베이스 테이블이 있어.
+여기에 id, pass, name, mobile을 삽입하고 싶은데,
+각각 myid, mypass, myname, 010-1111-1111 로 넣는 명령을 만들어 줘.
+
+2. 검색(select)
+
+SELECT 필드1, 필드2, 필드3 FROM 테이블이름 WHERE 조건;
+
+SELECT id, name FROM users;
+SELECT * FROM users;
+SELECT * FROM users WHERE id='shin1122'
+
+SELECT * FROM users ORDER BY name asc;
+                                  desc;
+
+SELECT * FROM users ORDER BY name asc limit 3, 5;
+
+위 테이블에서 검색을 하고 싶어.
+성이 "김"씨인 사람만 보고 싶어. 
+SQL 명령어를 알려줘.
+
+3. 수정(update)
+
+UPDATE 테이블이름 SET id='홍길동', name='hong' WHERE 조건;
+
+UPDATE users SET id='newid', name='내이름' WHERE idx='12';
+
+위 테이블에서 idx가 12인 데이터를 찾아서 수정하고 싶어.
+id='newid', name='내이름'으로 바꾸고 싶어.
+
+4. 삭제(delete)
+
+DELETE FROM 테이블명 WHERE 조건;
+
+delete from users where idx='12';
+
+위 테이블에서 idx가 12인 데이터를 삭제하기 위한 SQL 스크립트를 만들어줘.
+
+DELETE FROM users
+WHERE idx = 12;
+
+1. 데이터 삽입 ---> INSERT INTO 테이블명 (필드1, 필드2, ...) VALUES ('값1', '값2', ..);
+2. 데이터 검색 ---> SELECT * FROM 테이블명
+     [WHERE 조건] [ORDER BY 원하는 순서] [LIMIT 어디부터, 몇개]
+3. 데이터 변경 ---> UPDATE 테이블명 SET 필드1='값', 필드2='값2' WHERE 조건;
+4. 데이터 삭제 ---> DELETE FROM 테이블명 조건;
+
+INSERT, SELECT, UPDATE, DELETE
+
+users 테이블에서 id에 't'가 들어가는 데이터를 찾고 싶어.
+idx, id, name만 보고 싶어.
+만약에 데이터가 여러개라면 name의 오름차순으로 정리하도록 SQL 명령을 만들어 줘.
+
+SELECT idx, id, name
+FROM users
+WHERE id LIKE '%t%'
+ORDER BY name ASC;
+
+SQL의 약자가 뭐고 간단한 설명도 해 줘.
+
+Structured Query Language
+
+Query : 질의
+INSERT : 삽입
+UPDATE : 갱신
+SELECT : 검색
+DELETE : 삭제
+
+
+CLI : Command Line Interface (명령으로만 질문하고 결과얻는 방법)
+GUI : Graphical User Interface
+
+검색 :
+id, name, age
+
+나이가 20살 이상인 사람을 찾는데, 나이의 오름차순으로 정렬해 줘.
+만약에 나이가 같으면 이름의 오름차순으로 정렬차순으로 정렬해 줘.
+
+=================== 보강 2 구조 잡기 ===================
+
+Q
+HTML5와 Bootstrap5를 이용해 다음과 같은 PHP 코드를 만들고 싶어.
+전체적인 구조는 
+1. HTML의 head
+2. MENU
+3. Body
+4. 사이트 정보를 위한 Tail로 구성하려고 해.
+
+첫번째 HTML의 HEAD는 <html> ~ <body> 직전까지의 코드를 
+head.php에 넣고 싶어.
+또, db.php를 만들어 놓았는데 connectDB()를 정의해 DB에 접속하는 코드를 
+다음과 같이 만들어 놓았어. 이 코드를 include 하고 싶어.
+<?php
+function connectDB() {
+    $host = "localhost";   // 보통 같은 서버에 있으면 localhost
+    $user = "cnu";         // DB 사용자
+    $pass = "1111";        // DB 비밀번호
+    $dbname = "cnu";       // DB 이름
+
+    // mysqli 객체 생성
+    $conn = new mysqli($host, $user, $pass, $dbname);
+
+    // 연결 확인
+    if ($conn->connect_error) {
+        die("Database connection failed: " . $conn->connect_error);
+    }
+
+    // 성공 시 $conn 반환
+    return $conn;
+}
+?>
+
+두번째 Body의 처음에는 Bootstrap5의 navbar를 이용해 상단 메뉴를 만들어서
+menu.php로 넣고 싶어.
+이 메뉴에는 3개의 대메뉴가 있어.
+메뉴1, 메뉴2, 메뉴3이 있어.
+메뉴1에는 메뉴1-1, 메뉴1-2, 메뉴1-3
+메뉴2에는 메뉴2-1, 메뉴2-2
+메뉴3에는 메뉴3-1, 메뉴3-2
+가 있어. 드랍다운 형태의 메뉴로 만들어 줘.
+
+세번째 메뉴 밑에는 내용이 들어가는 자리야.
+index.php?cmd=login 와 같이 주소창에 입력된 cmd값을 보고
+body의 내용을 결정할거야.
+
+예를 들어 index.php처럼 cmd가 없으면 init.php를 include해 주고
+만약 cmd가 test이면 include "test.php"와 같이 $cmd값으로 
+화면에 출력할 코드를 결정하고 싶어.
+
+마지막 tail에는 사이트 정보가 있는데 내용은 다음과 같아.
+"충남대학교 한문학과 문화콘텐츠실습"이라고 놓고 싶어.
+만약에 body의 내용이 너무 짧은 경우에도 tail(사이트정보)는 화면의 맨 아래에
+배치되도록 하고 싶어.
+
+이를 만족하는 코드 전체를 index.php 파일로 놓고 싶어.
+
+=====================
+이때, head.php, menu.php, tail.php 파일을 만들어 줘.
+init.php파일에는 "첫 화면입니다."라고만 출력해 줘.
+
+
+1. 할일
+ㄱ. head.php 만들기
+ㄴ. menu.php 만들기
+ㄷ. tail.php
+ㄹ. init.php
+
+
+https://www.w3schools.com/bootstrap5/
+
+
+intro.php 는 cmd가 intro일때 나오는 페이지야.
+이때 intro.php파일을 다음과 같이 만들어 줘.
+
+<div class='container'>
+
+</div>
+
+이 속에 다음과 같은 정보를 넣어줘.
+
+학과명 : 한문학과
+위치 : 인문대학 201호
+전화 : 042-821-0000
+
+
+============================================
+
+<div class="d-flex">
+  <a class="btn btn-outline-light btn-sm" href="index.php?cmd=printLogin">로그인</a>
+</div>
+
+이렇게 menu.php의 후반부에 로그인하는 링크가 있어
+이 링크를 클릭했을 때, cmd 값인 printLogin.php를 include 해 줄거야.
+이 printLogin.php 파일을 만들고 싶어.
+
+이에 해당하는 printLogin.php의 예제를 만들어 줘.
+이때 실행을 하면 index.php?cmd=login 으로 이동하고 싶어.
+즉, action='index.php?cmd=login'으로 설정해 줘.
+
+
+이름짓기 : naming rule
+
+printlogin.php
+getmyfamilycount.php
+
+1. 중간에 의미있는 단어의 첫글자를 대문자
+printLogin.php
+getMyFamilyCount.php
+
+**카멜표기법**
+
+connectDatabase()
+
+2. 모두 소문자로 표기 ==> 의미단위마다 밑줄(_)연결
+
+print_login.php
+get_my_family_count.php
+
+snake 표기법
+
+=================================================
+1. index.php
+2. img/ la.jpg, ny.jpg, chicago.jpg
+3. head.php, menu.php, tail.php, init.php
+  printLogin.php, intro.php
+=================================================
+
+
+할 일: 로그인하기
+
+로그인 방법 2가지
+
+1. 세션을 이용하는 방법을
+  로그인 정보를 서버가 관리
+
+  보안에 유리
+  - 서버가 할 일이 많아져서 부하(load)가 발생
+
+2. 쿠키를 이용하는 방법 (localStorage를 이용하는 방법)
+
+  로그인을 클라이언트가 관리
+  서버는 사용자의 접속 여부를 알 지 못함.
+  보안에 취약
+  - 서버가 부하가 줄어든다.
