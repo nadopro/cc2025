@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>❤️문화콘텐츠실습❤️</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  <!-- 선택: 사이트 전역 커스텀 스타일 -->
-  <style>
-    /* 필요 시 전역 스타일 추가 */
-  </style>
-</head>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="container">
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="img/la.jpg" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+        <img src="img/chicago.jpg" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+        <img src="img/ny.jpg" alt="New York" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+</div>
+
+
+<div class="alert alert-primary" role="alert">
+  첫 화면입니다.
+</div>

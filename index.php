@@ -9,6 +9,8 @@
 
 <?php
   include "menu.php";
+
+    // localhost/index.php?cmd=test
 ?>
 
 <main class="container my-4 flex-grow-1">

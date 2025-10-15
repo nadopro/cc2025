@@ -18,8 +18,11 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="menu1Dropdown">
             <li><a class="dropdown-item" href="index.php?cmd=intro">학과소개</a></li>
-            <li><a class="dropdown-item" href="index.php?cmd=menu1-2">메뉴1-2</a></li>
-            <li><a class="dropdown-item" href="index.php?cmd=menu1-3">메뉴1-3</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=teacher">교수님소개</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
           </ul>
         </li>
 
