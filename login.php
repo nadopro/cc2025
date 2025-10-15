@@ -16,13 +16,20 @@
             // 로그인 성공
             $_SESSION["sino_id"]   = $row["name"];
             $_SESSION["sino_name"] = $row["name"];
-            echo "로그인 성공!<br>";
-            echo "환영합니다, " . $_SESSION["sino_name"] . "님";
+
+            $msg = "로그인 성공";
         } else {
             // 로그인 실패
-            echo "아이디 또는 비밀번호가 올바르지 않습니다.";
+            $msg = "아이디와 비밀번호를 확인하세요";
         }
     } else {
         echo "쿼리 오류: " . mysqli_error($conn);
     }
+
+    echo "
+    <script>
+        alert('$msg');
+        location.href='index.php';
+    </script>
+    ";
 ?>
