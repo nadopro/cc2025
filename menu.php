@@ -52,8 +52,26 @@
 
       <!-- 우측 예시: 로그인 링크 등 -->
       <div class="d-flex">
-        <a class="btn btn-outline-light btn-sm" href="index.php?cmd=printLogin">로그인</a>
-      </div>
+        <?php
+            if($_SESSION['sino_id'])
+            {
+              $name = $_SESSION['sino_name'];
+
+              
+              ?>
+               <a class="btn btn-outline-light btn-sm" href="index.php?cmd=logout"><?php echo $name; ?> 로그아웃</a>
+              <?php
+            }else
+            {
+              ?>
+               <a class="btn btn-outline-light btn-sm" href="index.php?cmd=printLogin">로그인</a>
+              <?php
+            }
+        ?>
+
+        </div>
+
+       
     </div>
   </div>
 </nav>
