@@ -648,4 +648,41 @@ snake 표기법
   로그인을 클라이언트가 관리
   서버는 사용자의 접속 여부를 알 지 못함.
 
-AA
+idx INT AUTO_INCREMENT PRIMARY KEY,      -- 고유 번호, 자동 증가
+    id VARCHAR(50) NOT NULL UNIQUE,          -- 회원 아이디, 중복 방지
+    pass VARCHAR(255) NOT NULL,              -- 비밀번호 (실제 서비스에서는 해싱 저장 권장)
+    name VARCHAR(100) NOT NULL,              -- 회원 이름
+    mobile VARCHAR(20) NOT NULL              -- 휴대폰 번호
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+이 테이블이 ,id, pass와 비교해 로그인하고 싶어.
+데이터베이스 연동은 이미 index.php파일에서
+$conn = connectDB();
+
+이렇게 접속은 다 성공한 상태야.
+이 코드를 데이다음과 같이 로그인하는 코드의 샘플을 만들었어.
+이 코드를 데이터베이스와 연동하고 싶어.
+
+CREATE TABLE users (
+    터베이스와 연동하도록 변경해 줘.
+
+mysqli_query()를 사용할 거야.
+
+
+<?php
+    $id = $_POST["id"];
+    $pass = $_POST["pass"];
+
+    echo "id = $id <br>pass = $pass <br>";
+
+    if($id == "test" and $pass == "1234")
+    {
+        $_SESSION["sino_id"] = $id;
+        $_SESSION["sino_name"] = "한돌이";
+    }else
+    {
+        
+    }
+
+?>
