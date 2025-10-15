@@ -686,3 +686,11 @@ mysqli_query()를 사용할 거야.
     }
 
 ?>
+
+
+javascript:alert(document.cookie);
+
+db.php
+db.inc.php
+
+
