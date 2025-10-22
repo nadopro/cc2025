@@ -20,7 +20,7 @@
             <li><a class="dropdown-item" href="index.php?cmd=intro">학과소개</a></li>
             <li><a class="dropdown-item" href="index.php?cmd=teacher">교수님소개</a></li>
             <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
-            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=ngram">N그램 분석기</a></li>
             <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
             <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
           </ul>
