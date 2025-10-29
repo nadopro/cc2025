@@ -911,3 +911,34 @@ if (is_file("$cmd.php")) {
   include "tail.php";
 ?>
 
+
+===============================================
+
+게시판을 위해 데이터베이스 테이블(board)을 만들고 싶어.
+다음 조건을 만족하는 테이블을 만들어 줘.
+
+idx : primary key, auto_increment
+bid : 게시판의 아이디, 1: 공지사항, 2: 자유게시판
+title : 게시글의 제목
+html : 게시글의 내용
+id : 작성자의 아이디
+name : 작성자의 이름
+time : 작성시간, datetime
+hit : 읽은 카운트
+notice : 공지사항 여부, 1: 공지글, 0: 일반글
+
+
+CREATE TABLE board (
+  idx INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,        -- 기본키
+  bid TINYINT UNSIGNED NOT NULL DEFAULT 1,            -- 게시판 ID (1: 공지사항, 2: 자유게시판)
+  title VARCHAR(255) NOT NULL,                        -- 게시글 제목
+  html MEDIUMTEXT NOT NULL,                           -- 게시글 내용 (HTML)
+  id VARCHAR(50) NOT NULL,                            -- 작성자 ID
+  name VARCHAR(50) NOT NULL,                          -- 작성자 이름
+  time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,   -- 작성시간
+  hit INT UNSIGNED NOT NULL DEFAULT 0,                -- 조회수
+  notice TINYINT(1) NOT NULL DEFAULT 0,               -- 공지글 여부 (1: 공지글, 0: 일반글)
+  INDEX (bid),
+  INDEX (notice),
+  INDEX (time)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
