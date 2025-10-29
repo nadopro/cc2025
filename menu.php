@@ -29,11 +29,11 @@
         <!-- 메뉴2 -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="menu2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            메뉴2
+            커뮤니티
           </a>
           <ul class="dropdown-menu" aria-labelledby="menu2Dropdown">
-            <li><a class="dropdown-item" href="index.php?cmd=menu2-1">메뉴2-1</a></li>
-            <li><a class="dropdown-item" href="index.php?cmd=menu2-2">메뉴2-2</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=1">공지사항</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=2">자유게시판</a></li>
           </ul>
         </li>
 
