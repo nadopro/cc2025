@@ -855,3 +855,59 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 한자는 띄어쓰기, 구둣점을 기준으로 각각 구분하고
 영어, 숫자, 구두점을 제외한 특수문자는 모두 불필요해.
 이를 반영해서 현재 제시한 코드 형태로 수정해 줘.
+
+WYSIWYG (위지윅 게시판)
+
+What You See Is What You get_my_family_count
+
+우리 홈페이지는 index.php?cmd=wysiwyg 이렇게 접속하면
+index.php의 몸체에서 include "wysiwyg.php"; 를 처리하는 구조야.
+
+이때 우리는 wysiwyg.php을 만들거야.
+
+게시판에서 WYSIWYG 입력부분을 만들거야.
+
+첫줄은 제목
+둘째줄은 Bold, UnderLine, Italic, 텍스트빨간색, 텍스트 검정색 버튼이 있어.
+세번째 줄은 게시판의 텍스트 입력하는 부분
+네번째 줄은 등록 버튼으로 구성된 
+wysiwyg.php 파일을 만들어 줘.
+
+<?php
+  session_save_path("sess");
+  session_start();
+
+  include "db.php";
+  include "head.php";
+
+  $conn = connectDB();
+?>
+
+<body class="d-flex flex-column min-vh-100">
+
+<?php
+  include "menu.php";
+
+    // localhost/index.php?cmd=test
+?>
+
+<main class="container my-4 flex-grow-1">
+<?php
+  if(!isset($_GET['cmd']))
+    $cmd = "init";
+  else
+    $cmd = $_GET['cmd'];
+
+if (is_file("$cmd.php")) {
+    include "$cmd.php";
+} else {
+    http_response_code(404);
+    echo '<div class="alert alert-danger">요청하신 페이지를 찾을 수 없습니다.</div>';
+}
+?>
+</main>
+
+<?php
+  include "tail.php";
+?>
+
