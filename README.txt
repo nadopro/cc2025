@@ -950,3 +950,42 @@ CREATE TABLE board (
   hit INT UNSIGNED NOT NULL DEFAULT 0,                -- 조회수
   notice TINYINT(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+index.php?cmd=board&bid=1
+index.php?cmd=board&bid=2
+
+이런 형태로 게시판을 요청할거야.
+모든 파일은 index.php를 거쳐서 가고 데이터베이스 설정은 이미 끝나서
+$conn에 모든 접속정보를 포함하기 때문에,
+board.php는 순수한 게시판 동작만 있으면 돼.
+
+GET방식으로 $mode를 확인해서
+$mode가 없으면 $mode = "list", 즉 목록 보기
+
+$mode == "write" : 글 쓰기
+$mode == "show" : 글 내용보기
+
+이때 각각의 기능은 다음과 같아.
+
+글 목록 보기($mode = "list")
+  board 테이블에서 목록 10개씩 보여줘.
+  순서, 제목, 작성일
+  제목을 클릭하면 글 내용보기($mode = "show")로 이동
+  화면 하단에는 "글쓰기"버튼, 페이지별로 보기 가 배치돼
+  글쓰기를 누르면, "mode=write"로 이동해
+
+글쓰기(mode = write)
+제목, 작성자, 내용입력(textarea)
+화면 하단에는 글등록, 목록보기 버튼이 있어.
+글등록버튼을 누르면 bbs테이블에 삽입후, 목록으로 해.
+
+글 내용 보기($mode = "show")
+제목, 작성자, 작성일, 글 내용보기
+글 내용보기에서 줄바꿈이 있는 경우에는 <br>처리를 해줘.
+만약 글 내용이 아무리 적어도 글 내용의 공간을 높이 300px을 최소한 자리를 잡아줘.
+하단에는 삭제와 목록 버튼이 있고,
+삭제는 글쓴 사람(세션 : sino_id, sino_level)이거나 관리자(sino_level == 9)은
+삭제가 가능해
+
+
+board.php 파일을 만들어 줘.

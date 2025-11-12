@@ -16,6 +16,7 @@
             // 로그인 성공
             $_SESSION["sino_id"]   = $row["name"];
             $_SESSION["sino_name"] = $row["name"];
+            $_SESSION["sino_level"] = $row["level"];
 
             $msg = "로그인 성공";
         } else {
