@@ -913,6 +913,17 @@ if (is_file("$cmd.php")) {
 
 
 ===============================================
+CREATE TABLE users (
+    idx INT AUTO_INCREMENT PRIMARY KEY,      -- 고유 번호, 자동 증가
+    id VARCHAR(50) NOT NULL UNIQUE,          -- 회원 아이디, 중복 방지
+    pass VARCHAR(255) NOT NULL,              -- 비밀번호 (실제 서비스에서는 해싱 저장 권장)
+    name VARCHAR(100) NOT NULL,              -- 회원 이름
+    mobile VARCHAR(20) NOT NULL              -- 휴대폰 번호
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+alter table users add level int default '1';
+update users set level='9' where id='admin';
+
 
 게시판을 위해 데이터베이스 테이블(board)을 만들고 싶어.
 다음 조건을 만족하는 테이블을 만들어 줘.
@@ -937,8 +948,5 @@ CREATE TABLE board (
   name VARCHAR(50) NOT NULL,                          -- 작성자 이름
   time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,   -- 작성시간
   hit INT UNSIGNED NOT NULL DEFAULT 0,                -- 조회수
-  notice TINYINT(1) NOT NULL DEFAULT 0,               -- 공지글 여부 (1: 공지글, 0: 일반글)
-  INDEX (bid),
-  INDEX (notice),
-  INDEX (time)
+  notice TINYINT(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
