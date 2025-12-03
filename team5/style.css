@@ -1,0 +1,154 @@
+/* 기본 세팅 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+body {
+    background-color: #e8d9c3;
+    font-family: "맑은 고딕", Malgun Gothic, sans-serif;
+    color: #4a2e14;
+}
+
+/* 텍스트 중앙 배치 (공통 사용) */
+.text-center {
+    width:100%;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+/* 페이지 제목 */
+.page-title {
+    font-size:32px;
+    font-weight:bold;
+    margin:40px auto 20px;
+    width:100%;
+    text-align:center;
+}
+
+/* 공통 그리드 카드 */
+.grid {
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding-bottom:50px;
+}
+
+.item {
+    width:300px;
+    height:280px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    background:white;
+    cursor:pointer;
+    transition:.2s;
+}
+.item:hover { transform: translateY(-5px); }
+
+.item img {
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.item-name {
+    padding:10px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* 이벤트 카드 */
+.event-container {
+    width:800px;
+    margin:0 auto;
+}
+.event-box {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+.event-box img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* 상세 페이지 */
+.detail-wrap {
+    max-width:850px;
+    background:white;
+    margin:60px auto;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.22);
+}
+.detail-img {
+    width:100%;
+    border-radius:12px;
+    margin-bottom:22px;
+}
+
+/* 지도 버튼 */
+.map-btn {
+    display:inline-block;
+    margin-top:12px;
+    padding:12px 20px;
+    background:#4a2e14;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.map-btn:hover { background:#6a3f1b; }
+
+/* =============== 대표 메뉴 상세 페이지 =============== */
+.menu-wrap {
+    max-width:700px;
+    background:white;
+    margin:50px auto;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.menu-img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.menu-title {
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* 🔙 뒤로가기 버튼 (최상단 오른쪽 고정) */
+.back-btn {
+    position:absolute;
+    top:95px;  /* topmenu 아래 위치 */
+    right:40px;
+    background:#704214;
+    color:white;
+    padding:10px 18px;
+    font-size:16px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+.back-btn:hover {
+    background:#5c3a10;
+}
+
+
