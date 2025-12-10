@@ -1,0 +1,728 @@
+/* ================================
+기본 모드 (밝은 테마)
+================================= */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #fff;
+color: #000;
+}
+
+/* 강조 텍스트 */
+strong, .highlight {
+color: #0077cc;
+font-weight: bold;
+}
+
+/* 사이트 제목 */
+.site-title {
+text-align: center;
+padding: 16px;
+background: #f0f0f0;
+color: #000;
+margin: 0;
+}
+
+/* 헤더 */
+.header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 12px 16px;
+position: relative;
+background: #f0f0f0;
+}
+
+.top-right {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+/* 로그인/로그아웃 버튼 – 기본 스타일 */
+.login-btn,
+.logout-btn {
+padding: 8px 14px;
+background-color: #0077cc;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1em;
+text-align: center;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+background-color: #005fa3;
+}
+
+/* 하단 중앙 로그인 버튼 (printlogin 전용) */
+.login-btn.centered-btn {
+display: block;
+margin: 20px auto 0 auto; /* 중앙 배치 */
+min-width: 120px;
+padding: 10px 16px;
+background: #0077cc;
+color: #fff;
+border: none;
+font-size: 1em;
+cursor: pointer;
+border-radius: 4px;
+text-align: center;
+}
+
+.login-btn.centered-btn:hover {
+background: #005fa3;
+}
+
+.hamburger {
+font-size: 26px;
+background: none;
+border: none;
+color: #000;
+cursor: pointer;
+font-weight: bold;
+}
+
+.menu {
+display: none;
+flex-direction: column;
+background: #e0e0e0;
+padding: 12px;
+position: absolute;
+top: 50px;
+right: 0;
+border-radius: 4px;
+min-width: 140px;
+z-index: 1000;
+}
+
+.menu.open {
+display: flex;
+animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu a {
+display: block;
+padding: 10px;
+color: #000;
+text-decoration: none;
+}
+
+.menu a:hover {
+background: #c0c0c0;
+}
+
+/* 메인 콘텐츠 */
+#main-content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.hero {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.hero .image-wrapper {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.hero-image {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.hero-text h1 {
+font-size: 2.4em;
+margin: 10px 0;
+}
+
+.movie-details {
+max-width: 900px;
+margin: 0 auto;
+text-align: center;
+font-size: 1.1em;
+}
+
+.movie-details ul {
+list-style: none;
+padding: 0;
+}
+
+.movie-details ul li {
+margin-bottom: 6px;
+}
+
+/* 로그인 박스 */
+.login-box {
+max-width: 600px;
+margin: 100px auto;
+background: #f0f0f0;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 0 12px rgba(0,0,0,0.2);
+text-align: center;
+}
+
+.login-box label {
+display: block;
+color: #000;
+font-size: 1.1em;
+margin-bottom: 6px;
+}
+
+.login-box input, .login-box textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 16px;
+border-radius: 4px;
+border: 1px solid #ccc;
+font-size: 1em;
+background: #fff;
+color: #000;
+}
+
+/* ================================
+게시판
+================================= */
+.board-list {
+display: flex;
+flex-direction: column;
+gap: 14px;
+margin-bottom: 160px;
+}
+
+.board-item {
+padding: 18px 22px;
+border: 1px solid #ccc;
+border-radius: 8px;
+text-align: left;
+background: #fff;
+font-size: 1.1em;
+transition: all 0.2s ease;
+color: #000;
+}
+
+.board-item a.board-link {
+color: #000;
+text-decoration: none;
+font-weight: bold;
+}
+
+.board-item a.board-link:hover {
+background: #f0f8ff;
+}
+
+.board-item .meta {
+font-size: 0.9em;
+color: #000;
+margin-top: 6px;
+}
+
+.board-item.notice-item {
+border-left: 6px solid yellow;
+background: #fffbe6;
+}
+
+.board-item.empty {
+background: #f5f5f5;
+color: #555;
+text-align: center;
+padding: 40px;
+}
+
+/* 공지글 느낌표 */
+.notice-mark {
+color: red;
+margin-left: 6px;
+font-weight: bold;
+}
+
+/* 글쓰기 버튼 */
+.write-btn {
+position: fixed;
+bottom: 60px;
+right: 20px;
+padding: 14px 20px;
+background: #0077cc;
+color: #fff;
+border-radius: 6px;
+font-weight: bold;
+text-decoration: none;
+z-index: 1000;
+}
+
+.write-btn:hover {
+background: #005fa3;
+}
+
+/* 페이징 */
+.pagination {
+display: flex;
+justify-content: center;
+margin: 20px 0;
+gap: 8px;
+z-index: 900;
+position: relative;
+}
+
+.pagination a {
+display: block;
+padding: 8px 12px;
+border-radius: 4px;
+background: #e0e0e0;
+color: #000;
+text-decoration: none;
+}
+
+.pagination a.active {
+background: #0077cc;
+color: #fff;
+}
+
+/* ================================
+고대비 모드
+================================= */
+body.high-contrast {
+background-color: #111;
+color: #fff;
+}
+
+body.high-contrast .header {
+background-color: #333;
+}
+
+body.high-contrast .menu {
+background-color: #000;
+}
+
+body.high-contrast .menu a {
+color: #fff;
+}
+
+body.high-contrast .menu a:hover {
+background-color: #444;
+}
+
+body.high-contrast .hamburger {
+color: #fff;
+font-weight: bolder;
+}
+
+body.high-contrast .login-box {
+background-color: #111;
+color: #fff;
+}
+
+body.high-contrast .login-box input,
+body.high-contrast .login-box textarea {
+background-color: #222;
+color: #fff;
+border: 1px solid #fff;
+}
+
+body.high-contrast .write-btn {
+background-color: #000;
+color: #fff;
+}
+
+body.high-contrast .board-item.notice-item {
+background: #fffbe6;
+border-left: 6px solid yellow;
+color: #000;
+}
+
+body.high-contrast .board-item.empty {
+background-color: #333;
+color: #fff;
+}
+
+body.high-contrast .board-item a.board-link {
+color: #000;
+}
+
+body.high-contrast .board-item .meta {
+color: #000;
+}
+
+body.high-contrast .pagination a {
+background: #222;
+color: #fff;
+}
+
+body.high-contrast .pagination a.active {
+background: #0077cc;
+color: #fff;
+}
+
+/* ================================
+글쓰기 페이지 / 글보기 페이지 통합 스타일
+================================= */
+.board-form,
+.view-form {
+width: 100%;
+max-width: 960px;
+margin: 50px auto;
+background: #f0f0f0;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 0 12px rgba(0,0,0,0.2);
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+}
+
+.board-form h2.form-title,
+.view-form .form-title {
+text-align: center;
+margin-bottom: 24px;
+font-size: 2em;
+font-weight: bold;
+color: #000;
+}
+
+.board-form label,
+.view-form .view-meta,
+.view-form .view-content,
+.notice-label {
+color: #000;
+}
+
+.board-form input[type="text"],
+.board-form textarea,
+.view-form .view-content {
+width: 100%;
+padding: 12px;
+border-radius: 4px;
+border: 1px solid #ccc;
+font-size: 1em;
+background: #fff;
+color: #000;
+box-sizing: border-box;
+display: block;
+}
+
+/* 글 내용 영역 최소 높이 확보 */
+.view-form .view-content {
+min-height: 300px;
+}
+
+/* 공지 체크박스 및 버튼 */
+.form-actions {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+margin-top: 20px;
+}
+
+.notice-label {
+display: flex;
+align-items: center;
+gap: 6px;
+font-weight: normal;
+}
+
+.login-btn.centered-btn {
+margin-top: 10px;
+}
+
+/* 글보기 버튼 */
+.view-form .view-actions {
+display: flex;
+justify-content: center;
+gap: 12px;
+margin-top: 25px;
+}
+
+.btn-edit {
+padding: 10px 18px;
+background-color: #0066cc;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.btn-edit:hover {
+background-color: #004a99;
+}
+
+.btn-delete {
+padding: 10px 18px;
+background-color: #cc0000;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.btn-delete:hover {
+background-color: #990000;
+}
+
+/* 목록으로 버튼 별도 */
+.btn-back {
+padding: 10px 18px;
+background-color: #555;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.btn-back:hover {
+background-color: #333;
+}
+
+/* ================================
+고대비 모드 글쓰기 / 글보기
+================================= */
+body.high-contrast .board-form,
+body.high-contrast .view-form {
+background-color: #111;
+color: #fff;
+}
+
+body.high-contrast .board-form h2.form-title,
+body.high-contrast .board-form label,
+body.high-contrast .notice-label,
+body.high-contrast .view-form .form-title,
+body.high-contrast .view-form .view-meta {
+color: #fff;
+}
+
+/* 글 내용 고대비에서 검은색으로 표시 */
+body.high-contrast .view-form .view-content {
+color: #000;
+}
+
+body.high-contrast .view-form .btn-edit {
+background-color: #0066cc;
+color: #fff;
+}
+
+body.high-contrast .view-form .btn-delete {
+background-color: #cc0000;
+color: #fff;
+}
+
+/* Center table container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Table layout */
+.styled-table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: center;
+}
+
+/* High contrast / normal mode variables */
+body.normal-mode {
+    --text-color: #000;
+    --bg-color: #fff;
+    --border-color: #000;
+}
+
+body.high-contrast {
+    --text-color: #fff;
+    --bg-color: #000;
+    --border-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Table header styling */
+.styled-table thead th {
+    font-weight: bold;
+    padding: 14px;
+}
+
+/* 기본 스타일 */
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.difference-table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.difference-table th,
+.difference-table td {
+    border: 1px solid #bbb;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.difference-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.difference-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.difference-table tr:hover {
+    background-color: #e0f7fa;
+}
+
+.difference-table caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.difference-table td {
+    vertical-align: middle;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+/* 고대비 모드 스타일 (body.high-contrast) */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast .difference-table {
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+
+body.high-contrast .difference-table th {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast .difference-table tr:nth-child(odd) td {
+    background-color: #111;
+    color: #fff;
+}
+
+body.high-contrast .difference-table tr:nth-child(even) td {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast .difference-table tr:hover td {
+    background-color: #ff0;
+    color: #000;
+}
+
+/* introduce.php 전용 레이아웃 ---------------------------------- */
+
+.intro-page{
+  background: var(--bg);
+  padding-bottom: 40px;
+}
+
+/* 가운데 큰 영상 */
+.hero-video-wrap{
+  padding: 32px 0 16px;
+}
+.hero-video-inner{
+  display: flex;
+  justify-content: center;
+}
+.hero-video{
+  max-width: 1000px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  background: #000;
+}
+
+/* 포스터 + 줄거리 카드 */
+.intro-main{
+  margin-top: 8px;
+}
+.intro-card{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.intro-poster img{
+  display: block;
+  width: 180px;
+  border-radius: 10px;
+}
+
+/* 작은 화면에서는 위아래로 쌓기 */
+@media (max-width: 768px){
+  .intro-card{
+    grid-template-columns: 1fr;
+  }
+  .intro-poster{
+    text-align: center;
+  }
+  .intro-poster img{
+    width: 150px;
+  }
+}
+
+.intro-heading{
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.intro-synopsis{
+  margin: 0;
+  line-height: 1.7;
+  color: #cfd3d8;
+}
+

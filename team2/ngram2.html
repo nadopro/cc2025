@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>D3.js 네트워크 다이어그램 (줌 & 이동 가능)</title>
+  <style>
+    svg {
+      border: 1px solid #ccc;
+    }
+    .link {
+      stroke: #999;
+      stroke-opacity: 0.6;
+      stroke-width: 2px;
+    }
+
+    .node circle {
+      stroke: #fff;
+      stroke-width: 1.5px;
+      fill: #69b3a2;
+    }
+
+    .node text {
+      font: 14px sans-serif;
+      pointer-events: none;
+      text-anchor: middle;
+      fill: #000;
+    }
+  </style>
+</head>
+<body>
+  <svg width="800" height="600"></svg>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    const graph = {
+      nodes: [
+        { name: "홍대감" },
+        { name: "홍길동" },
+        { name: "사임당" },
+        { name: "율곡" }
+      ],
+      links: [
+        { source: "홍대감", target: "홍길동", relation: "father" },
+        { source: "사임당", target: "율곡", relation: "mother" },
+        { source: "홍길동", target: "율곡", relation: "friend" }
+      ]
+    };
+
+    const width = 800;
+    const height = 600;
+
+    const svg = d3.select("svg");
+    const container = svg.append("g");
+
+    // 줌 동작 설정
+    const zoom = d3.zoom()
+      .scaleExtent([0.3, 4])  // 최소 30%, 최대 400%
+      .on("zoom", (event) => {
+        container.attr("transform", event.transform);
+      });
+
+    svg.call(zoom);
+
+    // 시뮬레이션 정의
+    const simulation = d3.forceSimulation(graph.nodes)
+      .force("link", d3.forceLink(graph.links).id(d => d.name).distance(150))
+      .force("charge", d3.forceManyBody().strength(-300))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+
+    // 링크 그리기
+    const link = container.append("g")
+      .attr("stroke", "#999")
+      .attr("stroke-opacity", 0.6)
+      .selectAll("line")
+      .data(graph.links)
+      .enter().append("line")
+      .attr("class", "link");
+
+    // 노드 그리기
+    const node = container.selectAll(".node")
+      .data(graph.nodes)
+      .enter().append("g")
+      .attr("class", "node")
+      .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+    node.append("circle")
+      .attr("r", 20);
+
+    node.append("text")
+      .attr("dy", 4)
+      .text(d => d.name);
+
+    simulation.on("tick", () => {
+      link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      node.attr("transform", d => `translate(${d.x},${d.y})`);
+    });
+
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event, d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event, d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+  </script>
+</body>
+</html>

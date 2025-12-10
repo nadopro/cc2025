@@ -1,0 +1,406 @@
+/* =========================
+   기본 레이아웃 및 초기화
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Apple SD Gothic Neo", Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+}
+
+/* 전체 가운데 정렬 */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =========================
+   헤더 영역
+========================= */
+
+.site-header {
+    width: 100%;
+    height: 70px;
+    background: #2b2b2b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-left a {
+    font-size: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 로그인 버튼 */
+.login-btn {
+    background: #ffffff;
+    color: #2b2b2b;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    width: auto; /* 길어지던 오류 해결 */
+    white-space: nowrap;
+}
+
+/* 햄버거 버튼 */
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* =========================
+   모바일 메뉴
+========================= */
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 10px 0;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu a:hover {
+    background: #444;
+}
+
+/* =========================
+   푸터
+========================= */
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background: #2b2b2b;
+    color: white;
+    margin-top: 60px;
+}
+
+.mode-btn {
+    margin: 5px;
+    padding: 8px 14px;
+    background: #ffffff;
+    color: #2b2b2b;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* =========================
+   고대비 (High Contrast)
+========================= */
+
+body.high-contrast {
+    background: black !important;
+    color: white !important;
+}
+
+body.high-contrast .site-header {
+    background: black !important;
+    border-bottom: 2px solid white;
+}
+
+body.high-contrast .site-header a {
+    color: white !important;
+}
+
+body.high-contrast .mobile-menu {
+    background: black !important;
+}
+
+body.high-contrast .mobile-menu a {
+    color: white !important;
+}
+
+body.high-contrast .mode-btn {
+    background: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+body.high-contrast .login-btn {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+body.high-contrast .post-item {
+    background: #111 !important;
+    border: 1px solid white;
+}
+
+body.high-contrast .write-btn {
+    background: #222;
+    color: white;
+    border: 1px solid white;
+}
+
+/* 공지글 high contrast */
+body.high-contrast .notice .post-title {
+    color: yellow !important;
+}
+
+/* =========================
+   게시판 영역
+========================= */
+
+.board-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 게시글 목록 전체 */
+.board-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 80px; /* tail 버튼 피하도록 */
+}
+
+/* 게시글 하나 */
+.post-item {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.post-item:hover {
+    background: #f0f0f0;
+}
+
+/* 공지글 */
+.notice {
+    border: 2px solid #1e90ff;
+    background: #e9f4ff;
+}
+
+.notice .post-title {
+    color: #0066ff !important;   /* 요청: 일반 모드에서 파란 텍스트 */
+    font-weight: bold;
+}
+
+.notice-icon {
+    color: red;
+    margin-right: 6px;
+}
+
+/* 게시글 제목 */
+.post-title {
+    font-size: 20px; /* 요청: 더 크게 보이도록 복구 */
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+}
+
+/* 작성자 정보 */
+.post-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========================
+   글쓰기 버튼
+========================= */
+
+.write-btn {
+    position: fixed;
+    bottom: 95px;         /* tail에 안 가려지도록 재조정 */
+    right: 25px;
+    padding: 12px 18px;
+    background: #0066ff;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   글쓰기 화면 스타일 (완전 수정)
+========================= */
+
+.write-container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.12);
+}
+
+/* 제목 입력 */
+.write-container .write-title-input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+/* 내용 작성 textarea */
+.write-container textarea.write-content {
+    width: 100%;
+    height: 420px;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* 공지글 체크박스 (관리자만 표시) */
+.notice-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* 작성 버튼 */
+.write-btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: #0066ff;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* hover */
+.write-btn-submit:hover {
+    background: #0053d6;
+}
+
+
+/* =========================
+   고대비 글쓰기 스타일
+========================= */
+
+body.high-contrast .write-container {
+    background: #111;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+body.high-contrast .write-title-input,
+body.high-contrast textarea.write-content {
+    background: #000;
+    border: 1px solid white;
+    color: white;
+}
+
+body.high-contrast .notice-option {
+    color: white;
+}
+
+body.high-contrast .write-btn-submit {
+    background: #222;
+    border: 1px solid white;
+}
+
+
+/* =========================
+   로그인 화면
+========================= */
+
+.login-box {
+    max-width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+body.high-contrast .login-box {
+    background: black;
+    border: 1px solid white;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+body.high-contrast .login-box input {
+    background: #111;
+    color: white;
+    border: 1px solid white;
+}
+
+body.high-contrast .login-box button {
+    background: #222;
+    border: 1px solid white;
+}
+
+/* =========================
+   모바일 대응
+========================= */
+
+@media (max-width: 700px) {
+    .write-btn {
+        bottom: 110px;
+        right: 15px;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+}

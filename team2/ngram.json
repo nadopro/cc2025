@@ -1,0 +1,2531 @@
+{
+    "nodes": [
+        {
+            "id": "不",
+            "value": 59
+        },
+        {
+            "id": "而",
+            "value": 54
+        },
+        {
+            "id": "子",
+            "value": 24
+        },
+        {
+            "id": "乎",
+            "value": 26
+        },
+        {
+            "id": "曰",
+            "value": 13
+        },
+        {
+            "id": "之",
+            "value": 13
+        },
+        {
+            "id": "亦",
+            "value": 21
+        },
+        {
+            "id": "有",
+            "value": 12
+        },
+        {
+            "id": "人",
+            "value": 23
+        },
+        {
+            "id": "爲",
+            "value": 21
+        },
+        {
+            "id": "也",
+            "value": 12
+        },
+        {
+            "id": "好",
+            "value": 19
+        },
+        {
+            "id": "者",
+            "value": 10
+        },
+        {
+            "id": "本",
+            "value": 10
+        },
+        {
+            "id": "習",
+            "value": 11
+        },
+        {
+            "id": "朋",
+            "value": 20
+        },
+        {
+            "id": "君",
+            "value": 12
+        },
+        {
+            "id": "其",
+            "value": 11
+        },
+        {
+            "id": "孝",
+            "value": 11
+        },
+        {
+            "id": "弟",
+            "value": 9
+        },
+        {
+            "id": "子曰",
+            "value": 4
+        },
+        {
+            "id": "不亦",
+            "value": 3
+        },
+        {
+            "id": "而不",
+            "value": 3
+        },
+        {
+            "id": "君子",
+            "value": 2
+        },
+        {
+            "id": "其爲",
+            "value": 2
+        },
+        {
+            "id": "爲人",
+            "value": 2
+        },
+        {
+            "id": "孝弟",
+            "value": 2
+        },
+        {
+            "id": "而好",
+            "value": 2
+        },
+        {
+            "id": "好犯",
+            "value": 2
+        },
+        {
+            "id": "犯",
+            "value": 10
+        },
+        {
+            "id": "犯上",
+            "value": 2
+        },
+        {
+            "id": "上",
+            "value": 8
+        },
+        {
+            "id": "鮮矣",
+            "value": 2
+        },
+        {
+            "id": "鮮",
+            "value": 2
+        },
+        {
+            "id": "矣",
+            "value": 2
+        },
+        {
+            "id": "學而",
+            "value": 1
+        },
+        {
+            "id": "學",
+            "value": 4
+        },
+        {
+            "id": "而時",
+            "value": 1
+        },
+        {
+            "id": "時",
+            "value": 8
+        },
+        {
+            "id": "時習",
+            "value": 1
+        },
+        {
+            "id": "習之",
+            "value": 1
+        },
+        {
+            "id": "亦說",
+            "value": 1
+        },
+        {
+            "id": "說",
+            "value": 5
+        },
+        {
+            "id": "說乎",
+            "value": 1
+        },
+        {
+            "id": "有朋",
+            "value": 1
+        },
+        {
+            "id": "朋自",
+            "value": 1
+        },
+        {
+            "id": "自",
+            "value": 11
+        },
+        {
+            "id": "自遠",
+            "value": 1
+        },
+        {
+            "id": "遠",
+            "value": 10
+        },
+        {
+            "id": "好犯上",
+            "value": 2
+        },
+        {
+            "id": "學而時",
+            "value": 1
+        },
+        {
+            "id": "而時習",
+            "value": 1
+        },
+        {
+            "id": "時習之",
+            "value": 1
+        },
+        {
+            "id": "不亦說",
+            "value": 1
+        },
+        {
+            "id": "亦說乎",
+            "value": 1
+        },
+        {
+            "id": "有朋自",
+            "value": 1
+        },
+        {
+            "id": "朋自遠",
+            "value": 1
+        },
+        {
+            "id": "自遠方",
+            "value": 1
+        },
+        {
+            "id": "方",
+            "value": 7
+        },
+        {
+            "id": "遠方來",
+            "value": 1
+        },
+        {
+            "id": "來",
+            "value": 4
+        },
+        {
+            "id": "不亦樂",
+            "value": 1
+        },
+        {
+            "id": "樂",
+            "value": 3
+        },
+        {
+            "id": "亦樂乎",
+            "value": 1
+        },
+        {
+            "id": "人不知",
+            "value": 1
+        },
+        {
+            "id": "知",
+            "value": 9
+        },
+        {
+            "id": "不知而",
+            "value": 1
+        },
+        {
+            "id": "知而不",
+            "value": 1
+        },
+        {
+            "id": "而不慍",
+            "value": 1
+        },
+        {
+            "id": "慍",
+            "value": 4
+        },
+        {
+            "id": "不亦君",
+            "value": 1
+        },
+        {
+            "id": "亦君子",
+            "value": 1
+        },
+        {
+            "id": "君子乎",
+            "value": 1
+        },
+        {
+            "id": "有子曰",
+            "value": 1
+        },
+        {
+            "id": "學而時習",
+            "value": 1
+        },
+        {
+            "id": "而時習之",
+            "value": 1
+        },
+        {
+            "id": "不亦說乎",
+            "value": 1
+        },
+        {
+            "id": "有朋自遠",
+            "value": 1
+        },
+        {
+            "id": "朋自遠方",
+            "value": 1
+        },
+        {
+            "id": "自遠方來",
+            "value": 1
+        },
+        {
+            "id": "不亦樂乎",
+            "value": 1
+        },
+        {
+            "id": "人不知而",
+            "value": 1
+        },
+        {
+            "id": "不知而不",
+            "value": 1
+        },
+        {
+            "id": "知而不慍",
+            "value": 1
+        },
+        {
+            "id": "不亦君子",
+            "value": 1
+        },
+        {
+            "id": "亦君子乎",
+            "value": 1
+        },
+        {
+            "id": "其爲人也",
+            "value": 1
+        },
+        {
+            "id": "爲人也孝",
+            "value": 1
+        },
+        {
+            "id": "人也孝弟",
+            "value": 1
+        },
+        {
+            "id": "而好犯上",
+            "value": 1
+        },
+        {
+            "id": "好犯上者",
+            "value": 1
+        },
+        {
+            "id": "不好犯上",
+            "value": 1
+        },
+        {
+            "id": "而好作亂",
+            "value": 1
+        },
+        {
+            "id": "作",
+            "value": 3
+        },
+        {
+            "id": "亂",
+            "value": 3
+        },
+        {
+            "id": "好作亂者",
+            "value": 1
+        },
+        {
+            "id": "學而時習之",
+            "value": 1
+        },
+        {
+            "id": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "id": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "id": "人不知而不",
+            "value": 1
+        },
+        {
+            "id": "不知而不慍",
+            "value": 1
+        },
+        {
+            "id": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "id": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "id": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "id": "而好犯上者",
+            "value": 1
+        },
+        {
+            "id": "而好作亂者",
+            "value": 1
+        },
+        {
+            "id": "本立而道生",
+            "value": 1
+        },
+        {
+            "id": "立",
+            "value": 1
+        },
+        {
+            "id": "道",
+            "value": 1
+        },
+        {
+            "id": "生",
+            "value": 1
+        },
+        {
+            "id": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "id": "仁",
+            "value": 3
+        },
+        {
+            "id": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "id": "與",
+            "value": 6
+        },
+        {
+            "id": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "id": "吾",
+            "value": 5
+        },
+        {
+            "id": "日",
+            "value": 3
+        },
+        {
+            "id": "三",
+            "value": 3
+        },
+        {
+            "id": "省",
+            "value": 3
+        },
+        {
+            "id": "日三省吾身",
+            "value": 1
+        },
+        {
+            "id": "身",
+            "value": 2
+        },
+        {
+            "id": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "id": "謀",
+            "value": 6
+        },
+        {
+            "id": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "id": "忠",
+            "value": 5
+        },
+        {
+            "id": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "id": "與朋友交而",
+            "value": 1
+        },
+        {
+            "id": "友",
+            "value": 8
+        },
+        {
+            "id": "交",
+            "value": 8
+        },
+        {
+            "id": "朋友交而不",
+            "value": 1
+        },
+        {
+            "id": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "id": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "id": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "id": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "id": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "id": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "id": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "id": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "id": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "id": "信",
+            "value": 5
+        },
+        {
+            "id": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "id": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "id": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "id": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "id": "與朋友交而不信乎",
+            "value": 1
+        }
+    ],
+    "links": [
+        {
+            "source": "不",
+            "target": "不",
+            "value": 9
+        },
+        {
+            "source": "而",
+            "target": "而",
+            "value": 7
+        },
+        {
+            "source": "子",
+            "target": "子",
+            "value": 6
+        },
+        {
+            "source": "乎",
+            "target": "乎",
+            "value": 6
+        },
+        {
+            "source": "曰",
+            "target": "曰",
+            "value": 4
+        },
+        {
+            "source": "之",
+            "target": "之",
+            "value": 3
+        },
+        {
+            "source": "亦",
+            "target": "亦",
+            "value": 3
+        },
+        {
+            "source": "有",
+            "target": "有",
+            "value": 3
+        },
+        {
+            "source": "人",
+            "target": "人",
+            "value": 3
+        },
+        {
+            "source": "爲",
+            "target": "爲",
+            "value": 3
+        },
+        {
+            "source": "也",
+            "target": "也",
+            "value": 3
+        },
+        {
+            "source": "好",
+            "target": "好",
+            "value": 3
+        },
+        {
+            "source": "者",
+            "target": "者",
+            "value": 3
+        },
+        {
+            "source": "本",
+            "target": "本",
+            "value": 3
+        },
+        {
+            "source": "習",
+            "target": "習",
+            "value": 2
+        },
+        {
+            "source": "朋",
+            "target": "朋",
+            "value": 2
+        },
+        {
+            "source": "君",
+            "target": "君",
+            "value": 2
+        },
+        {
+            "source": "其",
+            "target": "其",
+            "value": 2
+        },
+        {
+            "source": "孝",
+            "target": "孝",
+            "value": 2
+        },
+        {
+            "source": "弟",
+            "target": "弟",
+            "value": 2
+        },
+        {
+            "source": "子",
+            "target": "子曰",
+            "value": 4
+        },
+        {
+            "source": "曰",
+            "target": "子曰",
+            "value": 4
+        },
+        {
+            "source": "不",
+            "target": "不亦",
+            "value": 3
+        },
+        {
+            "source": "亦",
+            "target": "不亦",
+            "value": 3
+        },
+        {
+            "source": "而",
+            "target": "而不",
+            "value": 3
+        },
+        {
+            "source": "不",
+            "target": "而不",
+            "value": 3
+        },
+        {
+            "source": "君",
+            "target": "君子",
+            "value": 2
+        },
+        {
+            "source": "子",
+            "target": "君子",
+            "value": 2
+        },
+        {
+            "source": "其",
+            "target": "其爲",
+            "value": 2
+        },
+        {
+            "source": "爲",
+            "target": "其爲",
+            "value": 2
+        },
+        {
+            "source": "爲",
+            "target": "爲人",
+            "value": 2
+        },
+        {
+            "source": "人",
+            "target": "爲人",
+            "value": 2
+        },
+        {
+            "source": "孝",
+            "target": "孝弟",
+            "value": 2
+        },
+        {
+            "source": "弟",
+            "target": "孝弟",
+            "value": 2
+        },
+        {
+            "source": "而",
+            "target": "而好",
+            "value": 2
+        },
+        {
+            "source": "好",
+            "target": "而好",
+            "value": 2
+        },
+        {
+            "source": "好",
+            "target": "好犯",
+            "value": 2
+        },
+        {
+            "source": "犯",
+            "target": "好犯",
+            "value": 2
+        },
+        {
+            "source": "犯",
+            "target": "犯上",
+            "value": 2
+        },
+        {
+            "source": "上",
+            "target": "犯上",
+            "value": 2
+        },
+        {
+            "source": "鮮",
+            "target": "鮮矣",
+            "value": 2
+        },
+        {
+            "source": "矣",
+            "target": "鮮矣",
+            "value": 2
+        },
+        {
+            "source": "學",
+            "target": "學而",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "學而",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而時",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "而時",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "時習",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "時習",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "習之",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "習之",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "亦說",
+            "value": 1
+        },
+        {
+            "source": "說",
+            "target": "亦說",
+            "value": 1
+        },
+        {
+            "source": "說",
+            "target": "說乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "說乎",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有朋",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "有朋",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋自",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "朋自",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "自遠",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "自遠",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "好犯上",
+            "value": 2
+        },
+        {
+            "source": "犯",
+            "target": "好犯上",
+            "value": 2
+        },
+        {
+            "source": "上",
+            "target": "好犯上",
+            "value": 2
+        },
+        {
+            "source": "學",
+            "target": "學而時",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "學而時",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "學而時",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而時習",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "而時習",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "而時習",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "時習之",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "時習之",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "時習之",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦說",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦說",
+            "value": 1
+        },
+        {
+            "source": "說",
+            "target": "不亦說",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "亦說乎",
+            "value": 1
+        },
+        {
+            "source": "說",
+            "target": "亦說乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "亦說乎",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有朋自",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "有朋自",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "有朋自",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋自遠",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "朋自遠",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "朋自遠",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "自遠方",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "自遠方",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "自遠方",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "遠方來",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "遠方來",
+            "value": 1
+        },
+        {
+            "source": "來",
+            "target": "遠方來",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦樂",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦樂",
+            "value": 1
+        },
+        {
+            "source": "樂",
+            "target": "不亦樂",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "樂",
+            "target": "亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人不知",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "人不知",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不知而",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "不知而",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "不知而",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "知而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "知而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "知而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "而不慍",
+            "value": 1
+        },
+        {
+            "source": "慍",
+            "target": "而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦君",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦君",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "不亦君",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "亦君子",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "亦君子",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "亦君子",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "君子乎",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "君子乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "君子乎",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有子曰",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "有子曰",
+            "value": 1
+        },
+        {
+            "source": "曰",
+            "target": "有子曰",
+            "value": 1
+        },
+        {
+            "source": "學",
+            "target": "學而時習",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "學而時習",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "學而時習",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "學而時習",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而時習之",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "而時習之",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "而時習之",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "而時習之",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦說乎",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦說乎",
+            "value": 1
+        },
+        {
+            "source": "說",
+            "target": "不亦說乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "不亦說乎",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有朋自遠",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "有朋自遠",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "有朋自遠",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "有朋自遠",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "自遠方來",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "自遠方來",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "自遠方來",
+            "value": 1
+        },
+        {
+            "source": "來",
+            "target": "自遠方來",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "樂",
+            "target": "不亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "不亦樂乎",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人不知而",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知而",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "人不知而",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "人不知而",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不知而不",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "不知而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "不知而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不知而不",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "知而不慍",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "知而不慍",
+            "value": 1
+        },
+        {
+            "source": "慍",
+            "target": "知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦君子",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦君子",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "不亦君子",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "不亦君子",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "其",
+            "target": "其爲人也",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "其爲人也",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "其爲人也",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "其爲人也",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "孝",
+            "target": "爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "孝",
+            "target": "人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "弟",
+            "target": "人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而好犯上",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "而好犯上",
+            "value": 1
+        },
+        {
+            "source": "犯",
+            "target": "而好犯上",
+            "value": 1
+        },
+        {
+            "source": "上",
+            "target": "而好犯上",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "好犯上者",
+            "value": 1
+        },
+        {
+            "source": "犯",
+            "target": "好犯上者",
+            "value": 1
+        },
+        {
+            "source": "上",
+            "target": "好犯上者",
+            "value": 1
+        },
+        {
+            "source": "者",
+            "target": "好犯上者",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不好犯上",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "不好犯上",
+            "value": 1
+        },
+        {
+            "source": "犯",
+            "target": "不好犯上",
+            "value": 1
+        },
+        {
+            "source": "上",
+            "target": "不好犯上",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而好作亂",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "而好作亂",
+            "value": 1
+        },
+        {
+            "source": "作",
+            "target": "而好作亂",
+            "value": 1
+        },
+        {
+            "source": "亂",
+            "target": "而好作亂",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "好作亂者",
+            "value": 1
+        },
+        {
+            "source": "作",
+            "target": "好作亂者",
+            "value": 1
+        },
+        {
+            "source": "亂",
+            "target": "好作亂者",
+            "value": 1
+        },
+        {
+            "source": "者",
+            "target": "好作亂者",
+            "value": 1
+        },
+        {
+            "source": "學",
+            "target": "學而時習之",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "學而時習之",
+            "value": 1
+        },
+        {
+            "source": "時",
+            "target": "學而時習之",
+            "value": 1
+        },
+        {
+            "source": "習",
+            "target": "學而時習之",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "學而時習之",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "有朋自遠方",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "來",
+            "target": "朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人不知而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知而不",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "人不知而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "人不知而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "慍",
+            "target": "不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "亦",
+            "target": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "君",
+            "target": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "子",
+            "target": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "不亦君子乎",
+            "value": 1
+        },
+        {
+            "source": "其",
+            "target": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "孝",
+            "target": "其爲人也孝",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "孝",
+            "target": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "弟",
+            "target": "爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而好犯上者",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "而好犯上者",
+            "value": 1
+        },
+        {
+            "source": "犯",
+            "target": "而好犯上者",
+            "value": 1
+        },
+        {
+            "source": "上",
+            "target": "而好犯上者",
+            "value": 1
+        },
+        {
+            "source": "者",
+            "target": "而好犯上者",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "而好作亂者",
+            "value": 1
+        },
+        {
+            "source": "好",
+            "target": "而好作亂者",
+            "value": 1
+        },
+        {
+            "source": "作",
+            "target": "而好作亂者",
+            "value": 1
+        },
+        {
+            "source": "亂",
+            "target": "而好作亂者",
+            "value": 1
+        },
+        {
+            "source": "者",
+            "target": "而好作亂者",
+            "value": 1
+        },
+        {
+            "source": "本",
+            "target": "本立而道生",
+            "value": 1
+        },
+        {
+            "source": "立",
+            "target": "本立而道生",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "本立而道生",
+            "value": 1
+        },
+        {
+            "source": "道",
+            "target": "本立而道生",
+            "value": 1
+        },
+        {
+            "source": "生",
+            "target": "本立而道生",
+            "value": 1
+        },
+        {
+            "source": "其",
+            "target": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "source": "仁",
+            "target": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "source": "本",
+            "target": "其爲仁之本",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "仁",
+            "target": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "本",
+            "target": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "吾",
+            "target": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "source": "日",
+            "target": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "source": "三",
+            "target": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "source": "省",
+            "target": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "source": "吾",
+            "target": "吾日三省吾",
+            "value": 1
+        },
+        {
+            "source": "日",
+            "target": "日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "三",
+            "target": "日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "省",
+            "target": "日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "吾",
+            "target": "日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "身",
+            "target": "日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "爲人謀而不",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "忠",
+            "target": "人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "忠",
+            "target": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "與朋友交而",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "與朋友交而",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "與朋友交而",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "與朋友交而",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "與朋友交而",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "有",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "自",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "遠",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "方",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "來",
+            "target": "有朋自遠方來",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "知",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "慍",
+            "target": "人不知而不慍",
+            "value": 1
+        },
+        {
+            "source": "其",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "也",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "孝",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "弟",
+            "target": "其爲人也孝弟",
+            "value": 1
+        },
+        {
+            "source": "其",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "仁",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "之",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "本",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "其爲仁之本與",
+            "value": 1
+        },
+        {
+            "source": "吾",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "日",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "三",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "省",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "吾",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "身",
+            "target": "吾日三省吾身",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "忠",
+            "target": "爲人謀而不忠",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "忠",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "與朋友交而不",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "信",
+            "target": "朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "信",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "爲",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "人",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "謀",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "忠",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "爲人謀而不忠乎",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "信",
+            "target": "與朋友交而不信",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "信",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "與",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "朋",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "友",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "交",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "而",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "不",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "信",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        },
+        {
+            "source": "乎",
+            "target": "與朋友交而不信乎",
+            "value": 1
+        }
+    ]
+}

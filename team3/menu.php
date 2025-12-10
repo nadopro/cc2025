@@ -1,0 +1,99 @@
+<?php
+// Bootstrap 5 Navbar (드롭다운 3개)
+?>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand text-white" href="index.php">문화콘텐츠실습</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="메뉴 토글">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- 메뉴1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="menu1Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            한문학과
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu1Dropdown">
+            <li><a class="dropdown-item" href="index.php?cmd=intro">학과소개</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=teacher">교수님소개</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=ngram">ngram분석기</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=wysiwyg">WYSIWYG</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=student">학생회</a></li>
+          </ul>
+        </li>
+
+        <!-- 메뉴2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="menu2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            커뮤니티
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu2Dropdown">
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=1">공지사항</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=2">자유 게시판</a></li>
+          </ul>
+        </li>
+
+                <!-- 메뉴2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="menu2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            과제 실습
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu2Dropdown">
+            <li><a class="dropdown-item" href="index.php?cmd=lboard">전체 보기</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=2">十二章</a></li>
+            <li><a class="dropdown-item" href="index.php?cmd=board&bid=2">始 第一章</a></li>
+          </ul>
+        </li>
+
+        <?php
+        if(isset($_SESSION['sino_level']) and $_SESSION['sino_level'] == 9)
+        {
+
+          ?>
+          <!-- 메뉴3 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="menu3Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              관리자 메뉴
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menu3Dropdown">
+              <li><a class="dropdown-item" href="index.php?cmd=input">입력칸</a></li>
+              <li><a class="dropdown-item" href="index.php?cmd=lboard">리스트</a></li>
+            </ul>
+          </li>
+        <?php
+        }
+
+        ?>
+
+
+      </ul>
+
+      <!-- 우측 예시: 로그인 링크 등 -->
+      <div class="d-flex">
+        <?php
+            if($_SESSION['sino_id'])
+            {
+              $name = $_SESSION['sino_name'];
+
+              
+              ?>
+               <a class="btn btn-outline-light btn-sm  text-white" href="index.php?cmd=logout"><?php echo $name; ?> 로그아웃</a>
+              <?php
+            }else
+            {
+              ?>
+               <a class="btn btn-outline-light btn-  text-white" href="index.php?cmd=printLogin">로그인</a>
+              <?php
+            }
+        ?>
+
+        </div>
+
+       
+    </div>
+  </div>
+</nav>
